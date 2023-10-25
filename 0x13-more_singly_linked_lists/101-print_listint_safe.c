@@ -21,7 +21,7 @@ size_t print_listint_safe(const listint_t *head)
 		current = current->next;
 		if (temp <= current)
 		{
-			printf(stderr, "Error: Infinite loop detected\n");
+			printf("Error: %s\n", "Infinite loop detected");
 			exit(98);
 		}
 	}
