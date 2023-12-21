@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		error_exit(97, "Usage: cp file_from file_to\n");
+		error_exit(97, "Usage: %s file_from file_to\n", argv[0]);
 	}
 	fd_from = open(argv[1], O_RDONLY);
 
